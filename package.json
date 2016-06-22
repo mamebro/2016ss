@@ -5,9 +5,7 @@
   "main": "app.js",
   "scripts": {
     "build": "browserify app.js -t babelify -o ./bundle.js -v",
-    "watch": "watchify app.js -t babelify -o ./bundle.js -v",
-    "browser": "browser-sync start --server --port 9000 --files ['index.html', 'app.js']",
-    "start": "npm run build & npm run watch & npm run browser"
+    "watch": "watchify app.js -t babelify -o ./bundle.js -v"
   },
   "repository": {
     "type": "git",
