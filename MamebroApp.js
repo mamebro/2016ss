@@ -18,7 +18,7 @@ export default class MamebroApp extends React.Component {
       if (err || !res.ok) {
         console.error(this.props.url + '/api/entries.json', status, err.toString());
       } else {
-        this.setState({data: res.body.entries});
+        this.setState({data: res.body});
       }
     });
   }
